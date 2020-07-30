@@ -16,9 +16,9 @@ clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agre
 		 s.parentNode.insertBefore(wzrk, s);
   })();
 </script>
-<!--<script>
-  clevertap.event.push("Viewed");
-</script>-->
+<script>
+  clevertap.event.push("Product Viewed");
+</script>
 <style>
 body {
   margin: 0;
@@ -86,42 +86,42 @@ div {
   padding: 20px;
 }
 </style>
-<style>
-.myDiv {
-  border: 3px outset black;
-  background-color: #D3D3D3;    
-  text-align: center;
-  position: fixed;
-  bottom: 50;
-  right: 350;
-  width: 400px;
-  height:457px;
-}
-</style>
 </head>
 
 <body>
 	<div class="topnav">
-  		<a class="active" href="#home">About Me</a>
-  		<a href="try.html">Work Experience</a>
+  		<a href="index.html">About Me</a>
+  		<a href="#">Work Experience</a>
   		<a href="#contact">Education</a>
   		<a href="#about">Projects</a>
   		<a href="contact">Contact Details</a>
-  		<a href="ReachMe.html", align = 'right'> Reach Me</a>
+  		<a class="active"href="ReachMe.html", align = 'right'> Reach Me</a>
 	</div>
-	<H1 align = 'center', style = 'background-color:white;,font-family:optima;'> Alston Quadros </H1>
 
-  <img src="57_Alston.jpeg" 
-   style="position:fixed; right:950px; bottom:50px; width:400px; height:500px; border:none; border:3px outset black" />
+  <h3 align = 'center', style = 'background-color:white;,font-family:optima;'> Please Enter Your Details and I will Contact you Shortly</h3>
 
-  <div class="myDiv">
-    <h2>Name: Alston Quadros</h2>
-    <h3>About Me:</h3>
-    <p> To fill in later </p>
+  <div>
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="Continent">Continent</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Asia</option>
+        <option value="usa">Africa</option>
+        <option value="usa">North America</option>
+        <option value="usa">South America</option>
+        <option value="usa">Europe</option>
+        <option value="usa">New Zealand</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </form>
   </div>
-
-  
-
 </body>>
 	
 </html>
