@@ -1,125 +1,623 @@
-<HTML>
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<link rel="manifest" href="manifest.json" />
-<script type="text/javascript">
-    var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
- // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
-clevertap.account.push({"id": "W8R-944-695Z"});
-clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
-clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
- (function () {
-		 var wzrk = document.createElement('script');
-		 wzrk.type = 'text/javascript';
-		 wzrk.async = true;
-		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
-		 var s = document.getElementsByTagName('script')[0];
-		 s.parentNode.insertBefore(wzrk, s);
-  })();
-</script>
-<!--<script>
-  clevertap.event.push("Viewed");
-</script>-->
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Alston Quadros Portfolio</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
-<style>
-body {
-  background-image: url('Website background.jpg');
-}
-</style>
-<style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-<style>
-.myDiv {
-  border: 3px outset black;
-  background-color: #D3D3D3;    
-  text-align: center;
-  position: fixed;
-  bottom: auto;
-  right: 160;
-  width: 400;
-  height:500;
-}
-</style>
 </head>
 
 <body>
-	<div class="topnav">
-  		<a class="active" href="#home">About Me</a>
-  		<a href="Try.html">Work Experience</a>
-  		<a href="#contact">Education</a>
-  		<a href="#about">Projects</a>
-  		<a href="contact">Contact Details</a>
-  		<a href="ReachMe.html", align = 'right'> Reach Me</a>
-	</div>
-	<H1 align = 'center', style = 'background-color:white;,font-family:optima;'> Alston Quadros </H1>
 
-  <img src="57_Alston.jpeg" 
-   style="position:fixed; right:950px; bottom:50px; width:400px; height:500px; border:none; border:3px outset black" />
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-  <!--<div class="myDiv">
-    <h2>Name: Alston Quadros</h2>
-    <h3>About Me:</h3>
-    <p> To fill in later </p>
-  </div>-->
+      <nav id="nav-wrap">
 
-</body>>
-	
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Courses</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Alston Quadros</h1>
+            <h3>I'm based of India. I am a <span>Data Science Enthusiast</span>, good with <span>Data Visualisation</span> and <span>Machine Learning</span>. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/AlstonRulz"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/AlstonQ"><i class="fa fa-twitter"></i></a></li>
+               
+               <li><a href="https://www.linkedin.com/in/AlstonQ"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/alstonquadros/"><i class="fa fa-instagram"></i></a></li>
+               
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/57_Alston.jpeg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I’m a strong believer of learning at every step in life, I am a very amicable and approachable person. I believe in leading a team by staying with the team. I am also a team player and believe working together can bring out the best innovations. I am a perfectionist and like things accurate rather than easy. I like to grab an opportunity possible and give my 200% to whatever I do. I wish to be a data analyst and also encourage the spreading of automation using mathematical models, so that accuracy and consistency can be maintained and humankind can use time and energy saved to focus on bigger analytical problems.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Alston Quadros</span><br>
+						   <span>Mumbai, Maharashtra<br>
+						         India
+                     </span><br>
+						   <span>+91 8976018958</span><br>
+                     <span>alston.quadros13@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="AlstonCV.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>St Francis Institute of Technology</h3>
+                  <p class="info"> Bachelor's in Engineering (Computer Science) CGPA - 7.2 <span>&bull;</span> <em class="date"> Class of 2020</em></p>
+
+               </div>
+
+               <div class="twelve columns">
+
+                  <h3>SVKM</h3>
+                  <p class="info"> HSC <span>&bull;</span> <em class="date"> Class of 2016</em></p>
+
+               </div>
+
+               <div class="twelve columns">
+
+                  <h3>St Dominic Savio High School</h3>
+                  <p class="info"> SSC <span>&bull;</span> <em class="date"> Class of 2014 </em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>CleverTap</h3>
+                  <p class="info">Customer Sucess Engineer <span>&bull;</span> <em class="date">July 2020 - Present</em></p>
+
+                  <p>
+                  Working with Customer Success my main role was to ensure that the customer's queries are resolved quickly and they face no issues using the product. I worked with debbugging the issues, also integration of the product on various platforms such as iOS, Android, Web, React and Cordova.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>The Shaadi Times</h3>
+                  <p class="info">Data Analyst Intern <span>&bull;</span> <em class="date">May 2020 - July 2020</em></p>
+
+                  <p>
+                  Documentation of a detailed study on how air pollution has been affected by COVID-19 Virus. Visualization using Python Seaborn Library and Excel Dashboards. Predictive analysis using Regression and CART. Power BI for Data preprocessing and visualisation.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Cloud Counselage Pvt Ltd</h3>
+                  <p class="info">Data Science Intern <span>&bull;</span> <em class="date">March 2020 - June 2020</em></p>
+
+                  <p>
+                 	The organisation trained me with the Data Science concepts and then later assigned tasks to implement concepts such as data pre-processing, classification / prediction and Data Visualisation.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Logibrick Pvt Ltd.</h3>
+                  <p class="info">Data Science Intern <span>&bull;</span> <em class="date">June 2018 - July 2018</em></p>
+
+                  <p>
+                  We created a project that consists of a prediction algorithm to schedule movies TV series etc for a movie channel, based on parameters such as basic viewing time, TRP, Ratings, and Cast to schedule a daily format for each channel. The tools used were python and excel, the predictive algorithms used were SVM, Random Forest and Logistic Regression.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Projects</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>As a Data Science Enthusiast the skills I have learnt over the years with work experience and also self research are listed below. 
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Natural Language Processing</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Power BI / Tableau</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Android Studio</em></li>
+						<li><span class="bar-expand css"></span><em>Python </em></li>
+						<li><span class="bar-expand html5"></span><em>Android Studio</em></li>
+                  <li><span class="bar-expand jquery"></span><em>X Code</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+                        <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Route and Cost Optimisation</h3>
+                  <p class="info">Syngenta Pvt Ltd<span>&bull;</span> <em class="date">July 2019 - March 2020</em></p>
+
+                  <p>
+                  The idea of this project is to focus on the need of a warehouse for efficient quick and safe commute of goods, to aid the problem by generating shortest routes for their transporter based on parameters such as distance, traffic, tolls, etc. The route will be the most time and cost-efficient and will also allow the warehouse in charge to track all such commute of his goods on a single screen. The project is an outhouse project in collaboration with Syngenta Pvt Limited. The project includes features such as Live Tracking, Inventory Management, Multiple Shortest Route Detection, OCR among others. The architecture of the project will consist of a Desktop Application (written in python) and a Mobile Application (created on Android Studio). This project will help a lot in acquiring beneficial insights into the logistics and supply field of the industry.
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Text Summariser</h3>
+                  <p class="info">Kossine Pvt Ltd <span>&bull;</span> <em class="date">Jan 2019 - July 2019</em></p>
+
+                  <p>
+                  This project was created with the intention of saving time on reading in order to attain useful information.The application supported a Python (Tkinter) created User Interface, it summarises offline text files as well as online websites. The backend works on concepts such as Text Rank, analyzing POS tags using NTLK and Elimination of similar sentences using Cosine Similarity metrics.This project helped me step outside the bounds of basic Machine Learning and explore the concepts of Natural Language Processing.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Covid Impact Analysis</h3>
+                  <p class="info">The Shaadi Times <span>&bull;</span> <em class="date">May 2020 - July 2020</em></p>
+
+                  <p>
+                 	The project consisted of Research on the Impact of Corona Virus (COVID-19) on social elements such as Air Pollution, Entertainment, Media and other aspects. There was concise documentation of the subject matter, there was also research on data, also finding trends and analysis to derive logical results. The analysis was done using Python and R, the visualisation was done using Tableau, PowerBI and also Seaborn and Matplotlib. There was also predictive analysis using Statistical Models.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Other Projects</h3>
+                  <p class="info">St Francis Institute of Technology <span>&bull;</span> <em class="date">June 2016 - July 2019</em></p>
+
+                  <p>
+                 	● College Allocation Code— using Data Structures<br>
+					● Optimal Disk Scheduling Algorithm— using C<br>
+					● Web Development with Database— using HTML CSS and PHP<br>
+					● Implementation of ML Algorithms —using Python (Without Sklearn)<br> 
+					● Depth Analysers for Miners (IoT) —using Python (Ongoing)<br>
+					● Image Classification --- using (TensorFlow CNN and Image Generator)<br>
+					● Text Prediction --- using (NLTK RNN and TensorFlow)<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get Hosting.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><span class="lead">Publications</span></h2>
+            <p><span class="lead"> 
+        	Publications: <br>
+        	● Route and Cost Optimisation<br>
+			International Research Journal of Engineering and Technology (IRJET)<br>
+			● Text Summarizer for URL and .Docx Files<br>
+			International Journal of Advanced Research in Computer Science (IJARCS)<br>
+        </span></p>
+
+         </div>
+
+         <div class="three columns action">
+
+
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Certification: <br>
+            				● Microsoft Technical Associate 98-381 - Introduction to python (2019) <br>Marks: 96/100 <br>
+                           </p>
+                           <cite><a href = 'https://www.youracclaim.com/badges/e71bf4d9-13ce-4dae-b214-5797915ea37b/linked_in_profile'>Check it Out!</a></cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Virtual Internship: Deloitte<br>
+                           	Tasks: <br>
+                           	● Technology Stratergy and Innovation <br>
+                           	● Optimization and Delivery <br>
+                           	● Cloud Engineering <br>
+                           </p>
+                           <cite><a href = "https://insidesherpa.s3.amazonaws.com/completion-certificates/Deloitte/FqFtWwQzNxJ8Qsh5H_Deloitte_JtRk9rpoALrmKr4wa_completion_certificate.pdf">Check it Out!</a></cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Crash Course on Python<br>
+                           	Tasks: <br>
+                           	● Basic Python <br>
+                           	● Using Python to Interact with OS<br>
+                           	● Introduction to Git and Github <br>
+                           	● Troubleshooting and Debugging Techniques <br>
+                           	● Configuration Management of the Cloud <br>
+                           	● Automation Real-World Tasks with Python <br>
+                           </p>
+                           <cite><a href = "https://www.coursera.org/account/accomplishments/certificate/ZFKTZ27CWWPP">Check it Out!</a></cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Tensorflow in Practice Specialization<br>
+                           	Tasks: <br>
+                           	● Introduction to Tensorflow for AI, ML and DL<br>
+                           	● CNN in Tensorflow <br>
+                           	● Introduction to Git and Github <br>
+                           	● Natural Language Processing in
+							TensorFlow <br>
+                           	● Sequences, Time Series and
+							Prediction <br>
+                           </p>
+                           <cite><a href = "https://www.coursera.org/account/accomplishments/specialization/certificate/RDRJQHVCM4VJ">Check it Out!</a></cite>
+                        </blockquote>
+
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Thank you for reaching the End, If you have reached here means you like what you see, below are my contact details and also my social media handels to get in touch with me. You can also fill the form down and I will get in touch with you.
+                  Thank You for taking the time to go through my Portfolio.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Alston Quadros<br>
+						   Andheri (East), Mumbai <br>
+						   Maharashtra, India<br>
+						   <span>+91 8976018958</span>
+					   </p>
+
+				   </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+            	<li><a href="https://www.facebook.com/AlstonRulz"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/AlstonQ"><i class="fa fa-twitter"></i></a></li>
+               
+               <li><a href="https://www.linkedin.com/in/AlstonQ"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/alstonquadros/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Property of Alston Quadros</li>  
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
 </html>
