@@ -27,6 +27,7 @@
 	<script>
 	function unsubscribe() {
   		profileUpdate.put("MSG-email", false);
+		document.getElementById("demo").innerHTML = "Email Unsubscribed, Click Resubscribe to recieve Emails";
 	}
 	</script>
         <button onclick="resubscribe()">Resubscribe</button><br><br>
@@ -34,6 +35,7 @@
 	<script>
 	function resubscribe() {
   		profileUpdate.put("MSG-email", true);
+		document.getElementById("demo").innerHTML = "!! You are RESUBSCRIBED !!";
 	}
 	</script>
     </div>
