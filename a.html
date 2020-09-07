@@ -23,7 +23,19 @@
         <input type="text" id="email" /> <!--readonly="readonly"-->
         <br/><br/>
         <button onclick="unsubscribe()">Unsubscribe me</button>
+	<p id="demo"></p>
+	<script>
+	function unsubscribe() {
+  		profileUpdate.put("MSG-email", false);
+	}
+	</script>
         <button onclick="resubscribe()">Resubscribe</button><br><br>
+	<p id="demo"></p>
+	<script>
+	function resubscribe() {
+  		profileUpdate.put("MSG-email", true);
+	}
+	</script>
     </div>
 
 
