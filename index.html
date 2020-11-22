@@ -575,7 +575,15 @@
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
+                     <button onclick="myFunction()">Click me</button>
+
+			<p id="demo"></p>
+
+			<script>
+			function myFunction() {
+			  clevertap.event.push("Product Viewed");
+			}
+			</script>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
