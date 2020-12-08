@@ -20,27 +20,12 @@
 		<script> profileUpdate.put("MSG-email", false); </script>
 	</head>
 	<body>
-		<div> 
-			<h3> Unsubscribed </h3>
+		 <div> 
         <h4>I want to unsubscribe from future emails</h4>
-        <input type="text" id="email" /> <!--readonly="readonly"-->
+        <input type="text" id="email" readonly="readonly" />
         <br/><br/>
-        <button onclick="unsubscribe()">Unsubscribe me</button>
-	<p id="demo"></p>
-	<script>
-	function unsubscribe() {
-  		profileUpdate.put("MSG-email", false);
-		document.getElementById("demo").innerHTML = "Email Unsubscribed, Click Resubscribe to recieve Emails";
-	}
-	</script>
-        <button onclick="resubscribe()">Resubscribe</button><br><br>
-	<p id="demo"></p>
-	<script>
-	function resubscribe() {
-  		profileUpdate.put("MSG-email", true);
-		document.getElementById("demo").innerHTML = "!! You are RESUBSCRIBED !!";
-	}
-	</script>
+        <button onclick="unsubscribe()">Unsubscribe me</button><br/><br/>
+        <!-- button onclick="resubscribe()">Resubscribe</button -->
     </div>
 
 
@@ -74,5 +59,7 @@
         $WZRK_WR.subEmail(isReEncode);
     }
 </script>
+		
+
 </body>
 </html>
