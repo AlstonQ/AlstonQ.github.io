@@ -1,1 +1,74 @@
 
+<html>
+<head>
+<title>Certif-ID</title>
+
+<link href="./assets/images/favicon.png" rel="icon" sizes="16x16" type="image/png" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200, 300,400,500,600,700,800,900" rel="stylesheet" />
+<script type="text/javascript">
+    var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[]};
+// replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+clevertap.account.push({"id": "W44-Z4K-K65Z"});
+(function () {
+        var wzrk = document.createElement('script');
+        wzrk.type = 'text/javascript';
+        wzrk.async = true;
+        wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wzrk, s);
+ })();
+</script>
+</head>
+<body style="padding: 0;margin: 0;font-family: 'Montserrat', sans-serif;">
+<div class="email-subscribe-conatiner" style="background-color: #e4e4e4;height: 100vh;display: flex;flex-flow: column;justify-content: center;align-items: center;">
+<h2 style="font-size: 36px;line-height: 48px;color: #000;">Certif-ID</h2>
+<div style="background-color: #fff;padding: 40px 20px;border-radius: 10px;width: 36rem;">
+<h4 style="font-size: 24px;line-height: 34px;margin: 0 0 20px;color: #333;">Unsubscribe</h4>
+<p style="font-size: 14px;line-height: 24px;color: #000;padding: 5px;border: 1px dotted #000;">
+We're sorry to see you go! Enter your email address to unsubscribe from this list.
+</p>
+<label style="font-size: 14px;color: #666666;font-weight: bold;display: block;margin-bottom: 5px;">Email address</label>
+<input type="text" id="email" readonly="readonly" style="padding: 10px;font-size: 14px;outline: none;border: 2px solid #e7e7e7;border-radius: 5px;width: 100%;" />
+<br /><br />
+<button id="unsubscribe" onclick="unsubscribe()" style="padding: 10px 25px;border: none;outline: none;background-color: #445f72;color: #fff;font-size: 14px;border-radius: 5px;font-family: 'Montserrat', sans-serif;font-weight: 600;cursor: pointer;">Unsubscribe</button><br /><br />
+<button id="resubscribe" onclick="resubscribe()" style="display: none;padding: 10px 25px;border: none;outline: none;background-color: #445f72;color: #fff;font-size: 14px;border-radius: 5px;font-family: 'Montserrat', sans-serif;font-weight: 600;cursor: pointer;">Resubscribe</button><br /><br />
+
+</div>
+</div>
+<script> //Javascript
+        // Should be true only if your server is url encoding the URL on unsubscribe landing page
+            var isReEncode = false
+            // on  page load, fetch the email id of the user.
+            window.onload = function() {
+                $WZRK_WR.getEmail(isReEncode);
+            };
+            // will be called after the email id of the user has been fetched
+            function wzrk_email_fetched(emailStr) {
+                document.getElementById("email").value = emailStr;
+            }
+            // will be called after the subscription preferences for the user have been updated
+            function wzrk_email_subscription(status) {
+                //status 0 : unsubscribed, status 1 : subscribed
+                // todo - you can show a success message to the user from here
+                var statusLabel = 'subscribed';
+                if (status == 0) {
+                    document.getElementById('unsubscribe').style.display = "none"
+                    document.getElementById('resubscribe').style.display = ""
+                    statusLabel = 'unsubscribed';
+                }else{
+                    document.getElementById('unsubscribe').style.display = ""
+                    document.getElementById('resubscribe').style.display = "none"
+                }
+                alert("You've been " + statusLabel);
+            }
+            // call this function to unsubscribe the user
+            function unsubscribe(isReEncode) {
+                $WZRK_WR.unSubEmail(isReEncode);
+            }
+            // call this function to resubscribe the user
+            function resubscribe(isReEncode) {
+                $WZRK_WR.subEmail(isReEncode);
+            }
+        </script>
+</body>
+</html>
