@@ -12,7 +12,7 @@ self.addEventListener('install', function(event) {
         
 // with request network
 self.addEventListener('fetch', function(event) {
-    event.respondwith(
+    event.respondWith(
       // Try the cache
       caches.match(event.request).then(function(response) {
       // return it if there is a response or else fetch again
